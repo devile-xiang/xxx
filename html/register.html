@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/register.css" />
+	</head>
+	
+	<body>
+		<div class="col-lg-2 bodyrightdiv"></div>
+		<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 bodylogin">
+			<div>
+				<form action="html/1llogin.php" method="post">
+					
+					<div class="col-lg-12"><div class="col-md-3" id="ico"></div><div class="col-md-5">欢迎注册</div><div class="col-md-4">我已经注册，马上登陆</div></div>
+					<div id="body1">
+					<div class="col-lg-12" style="text-align: center;">
+						<div class="col-lg-3"></div>
+						<label for="phone" class="col-lg-1">手机号码</label>
+						<input type="text" class="col-lg-3" placeholder="请输入你的手机号"  onfocus="this.placeholder=''" onblur="this.placeholder='请输入你的手机号'" name="username" id="phone" class="input" /></div>
+					<div class="col-lg-12" style="text-align: center;">
+						<div class="col-lg-3"></div>
+						<label for="yzm" class="col-lg-1">手机验证码</label>
+
+						<input type="password" class="col-lg-3" placeholder="输入你的验证码"  onfocus="this.placeholder=''" onblur="this.placeholder='请输入验证码'" name="password" id="yzm" class="input" /></div>
+							<input type="button" value="点击获取验证码" id="hqyzm">
+						<div class="col-lg-12" style="text-align: center;">
+						<div class="col-lg-3"></div>
+						<label for="password passwordsr" class="col-lg-1">设置密码</label>
+						<input type="password" class="col-lg-3 passwordsr" placeholder="输入你的密码"  onfocus="this.placeholder=''" onblur="this.placeholder='请输入你的密码'" name="password" id="password" class="input" />
+						<div class="col-lg-4"></div>
+						<div class="col-lg-12 passwordts">6-20个字符，由字母，数字，和符号的两种以上组合。<a>密码设置建议</a></div>
+					</div>	
+					<div class="col-lg-12" style="text-align: center;">
+						<div class="col-lg-3" ></div>
+						<input type="checkbox" class="col-lg-1" id="xieyi"  />
+						<div type="password" class="col-lg-3"/>《苏宁易购会员章程》《易付宝协议》及《苏宁广告联盟在线协议》</div>	
+					</div>
+					<div class="col-lg-12" style="text-align: center;">
+						<input type="submit" value="登陆账号" /></div>
+					</div>					
+				</form>
+			</div>
+		</div>
+		<div class="col-lg-2 bodyleftdiv"></div>
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../js/register.js" ></script>
+		<script>
+			$(document).ready()
+
+
+		</script>
+	</body>
+</html>
