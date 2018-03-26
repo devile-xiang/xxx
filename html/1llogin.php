@@ -9,8 +9,6 @@
 $name=$_POST['username'];
 $password=$_POST['password'];
 
-echo $name;
-echo $password;
 //$zl='xiang';
 //
 //$pwd=crypt('qq12345678','xiang');
@@ -31,25 +29,25 @@ echo $password;
 //echo "<br/>";
 //$encode=null;
 
-$conn=mysqli_connect('127.0.0.1','root','','aa');
+$conn=mysqli_connect('sql.w86.vhostgo.com','xiangadmin','1999418xby','xiangadmin');
 if (!$conn){
     die('error'.mysqli_connect_error());
 }else{
     echo "连接成功"."<br/>";
 }
 
-$sql="SELECT  name,pwd,encode from user_info WHERE name=$name";
+$sql="SELECT  name,pwd,encode from user_table WHERE name=$name";
 
 $result=mysqli_query($conn,$sql);
 
 
 
-if (mysqli_num_rows($result) > 0) {
+if(mysqli_num_rows($result) > 0){
     // 输出数据
-    while($row = mysqli_fetch_assoc($result)) {
-        echo $encodedb=$row["encode"];
-        echo $namedb=$row["name"];
-        echo $pwddb=$row["pwd"];
+    while($row = mysqli_fetch_assoc($result)){
+      $encodedb=$row["encode"];
+      $namedb=$row["name"];
+      $pwddb=$row["pwd"];
 
     }
     echo $encodedb;
@@ -72,6 +70,7 @@ if (mysqli_num_rows($result) > 0) {
     }else{
         echo "登录失败";
         header('Location:../login.html?p=0');
+
     }
 } else {
     echo "0 结果";
