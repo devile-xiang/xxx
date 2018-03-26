@@ -1,0 +1,46 @@
+#ico{
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	height:90px;
+}
+#ico + div{
+	height: 90px;
+	font-size: 18px;
+	color: #888888;
+	vertical-align: middle;
+	line-height: 90px;
+}
+#ico + div+div{
+	height: 90px;
+	line-height:130px;
+	vertical-align: bottom;
+	text-align: right;
+	
+}
+#body1{
+	border: 1px solid #D1D1D1;
+	border-top: 3px solid #f90;
+	overflow: hidden;
+}
+label{
+	width: 80px;
+	text-align: left;
+	border: 1px solid #cacaca;
+	border-right: none ;
+	height: 38px;
+	vertical-align:middle;
+	line-height: 38px;
+}
+input{
+	border: 1px solid #cacaca;
+	border-left: none;
+	height: 38px;
+	outline: none;
+
+}
+#xieyi{
+	height: 20px;
+}
+.passwordts{
+	display: none;
+}

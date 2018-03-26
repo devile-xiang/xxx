@@ -1,0 +1,15 @@
+.bodyrightdiv{
+	height: 500px;
+	background-color: red;
+	
+}
+.bodylogin{
+	height: 500px;
+}
+.bodyleftdiv{
+	height: 500px;
+	background-color: red;
+}
+input{
+	padding-left: 5px;
+}
